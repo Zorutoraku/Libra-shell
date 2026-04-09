@@ -1,0 +1,18 @@
+{
+  "id":      "nightreign",
+  "name":    "Nightreign",
+  "preview": ["#C080FF", "#D04060", "#80C0F8", "#70C890"],
+
+  "backgroundOne":   "#080610",
+  "backgroundTwo":   "#0E0B1A",
+  "backgroundThree": "#151024",
+  "backgroundFour":  "#1D1630",
+  "textMain":        "#E8E0F4",
+  "textSub":         "#B8A8D4",
+  "textMuted":       "#7A6A98",
+  "textHint":        "#4A3F64",
+  "accentPrimary":   "#C080FF",
+  "accentDanger":    "#D04060",
+  "accentInfo":      "#80C0F8",
+  "accentSuccess":   "#70C890"
+}

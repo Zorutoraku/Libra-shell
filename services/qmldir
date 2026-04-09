@@ -1,0 +1,9 @@
+module services
+singleton BluetoothService  1.0 BluetoothService.qml
+singleton BrightnessService 1.0 BrightnessService.qml
+singleton CalendarService   1.0 CalendarService.qml
+singleton MprisService      1.0 MprisService.qml
+singleton NetworkService    1.0 NetworkService.qml
+singleton SoundService      1.0 SoundService.qml
+singleton SystemInfoService 1.0 SystemInfoService.qml
+singleton VolumeService     1.0 VolumeService.qml

@@ -1,0 +1,7 @@
+NetworkSettings 1.0 NetworkSettings.qml
+BluetoothSettings 1.0 BluetoothSettings.qml
+SettingsWindow 1.0 SettingsWindow.qml
+DeviceSettings 1.0 DeviceSettings.qml
+DesignSettings 1.0 DesignSettings.qml
+GeneralSettings 1.0 GeneralSettings.qml
+SoundSettings 1.0 SoundSettings.qml

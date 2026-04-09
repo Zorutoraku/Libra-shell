@@ -1,0 +1,22 @@
+{
+  "id": "girl-uniform",
+  "name": "Uniform",
+
+  "preview": ["#D96CC3", "#7A6CD9", "#C16CD9", "#D96C82"
+  ],
+
+  "backgroundOne": "#000000",
+  "backgroundTwo": "#151515",
+  "backgroundThree": "#212121",
+  "backgroundFour": "#2d2d2d",
+
+  "textMain": "#ececec",
+  "textSub": "#dddddd",
+  "textMuted": "#cecece",
+  "textHint": "#bcbcbc",
+
+  "accentPrimary": "#D96CC3",
+  "accentDanger": "#7A6CD9",
+  "accentInfo": "#C16CD9",
+  "accentSuccess": "#D96C82"
+}

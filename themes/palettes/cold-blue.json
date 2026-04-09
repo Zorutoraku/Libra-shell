@@ -1,0 +1,18 @@
+{
+  "id":      "cold-blue",
+  "name":    "Cold Blue",
+  "preview": ["#60A0FF", "#FF6060", "#60D8FF", "#60D880"],
+
+  "backgroundOne":   "#090C12",
+  "backgroundTwo":   "#101520",
+  "backgroundThree": "#161E2E",
+  "backgroundFour":  "#1E2A3E",
+  "textMain":        "#D8E8F8",
+  "textSub":         "#A8BFD8",
+  "textMuted":       "#708098",
+  "textHint":        "#485060",
+  "accentPrimary":   "#60A0FF",
+  "accentDanger":    "#FF6060",
+  "accentInfo":      "#60D8FF",
+  "accentSuccess":   "#60D880"
+}

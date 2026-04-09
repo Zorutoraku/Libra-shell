@@ -1,0 +1,18 @@
+{
+  "id":      "rose-pine",
+  "name":    "Rosé Pine",
+  "preview": ["#EBBCBA", "#EB6F92", "#9CCFD8", "#F6C177"],
+
+  "backgroundOne":   "#191724",
+  "backgroundTwo":   "#1F1D2E",
+  "backgroundThree": "#26233A",
+  "backgroundFour":  "#2A2740",
+  "textMain":        "#E0DEF4",
+  "textSub":         "#C4C2D8",
+  "textMuted":       "#908CAA",
+  "textHint":        "#6E6A86",
+  "accentPrimary":   "#EBBCBA",
+  "accentDanger":    "#EB6F92",
+  "accentInfo":      "#9CCFD8",
+  "accentSuccess":   "#F6C177"
+}

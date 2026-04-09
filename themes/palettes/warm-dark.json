@@ -1,0 +1,18 @@
+{
+  "id":      "warm-dark",
+  "name":    "Warm Dark",
+  "preview": ["#FFD060", "#C84040", "#A8C8F0", "#80C040"],
+
+  "backgroundOne":   "#121009",
+  "backgroundTwo":   "#1A1712",
+  "backgroundThree": "#221E17",
+  "backgroundFour":  "#2B261D",
+  "textMain":        "#F0E8D8",
+  "textSub":         "#C8BFA8",
+  "textMuted":       "#9E9280",
+  "textHint":        "#6E6457",
+  "accentPrimary":   "#FFD060",
+  "accentDanger":    "#C84040",
+  "accentInfo":      "#A8C8F0",
+  "accentSuccess":   "#80C040"
+}

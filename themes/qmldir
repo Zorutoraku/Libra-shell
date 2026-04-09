@@ -1,0 +1,6 @@
+module themes
+singleton ThemeGlobal   1.0 ThemeGlobal.qml
+singleton ThemePanels   1.0 ThemePanels.qml
+singleton ThemeWidgets  1.0 ThemeWidgets.qml
+singleton ThemeSettings 1.0 ThemeSettings.qml
+singleton ThemeService  1.0 ThemeService.qml
