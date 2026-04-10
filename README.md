@@ -28,6 +28,7 @@
   <img src="./preview/Preview_Systeminfo.png" alt="Preview" width="400"/>
   <img src="./preview/Preview_Musicplayer.png" alt="Preview" width="400"/>
   <img src="./preview/Preview_Calendar.png" alt="Preview" width="400"/>
+  <img src="./preview/Preview_Settings.png" alt="Preview" width="400"/>
 </div>
 
 ## Requirements
