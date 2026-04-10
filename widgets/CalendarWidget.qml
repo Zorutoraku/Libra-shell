@@ -74,14 +74,14 @@ Item {
                 color:  "transparent"
                 border.width: 1
                 border.color: prevHover.hovered ? root.t.accentColor : root.t.cardBorder
-                Behavior on border.color { ColorAnimation { duration: 120 } }
+                Behavior on border.color { ColorAnimation { duration: 80 } }
 
                 Text {
                     anchors.centerIn: parent
                     text: "<"; font.family: ThemeGlobal.fontSans
                     font.pixelSize: root.t.headerFontSize; font.bold: true
                     color: prevHover.hovered ? root.t.accentColor : root.t.mutedColor
-                    Behavior on color { ColorAnimation { duration: 120 } }
+                    Behavior on color { ColorAnimation { duration: 80 } }
                 }
                 HoverHandler { id: prevHover; cursorShape: Qt.PointingHandCursor }
                 TapHandler  { onTapped: root.prevMonth() }
@@ -102,14 +102,14 @@ Item {
                 color:  "transparent"
                 border.width: 1
                 border.color: nextHover.hovered ? root.t.accentColor : root.t.cardBorder
-                Behavior on border.color { ColorAnimation { duration: 120 } }
+                Behavior on border.color { ColorAnimation { duration: 80 } }
 
                 Text {
                     anchors.centerIn: parent
                     text: ">"; font.family: ThemeGlobal.fontSans
                     font.pixelSize: root.t.headerFontSize; font.bold: true
                     color: nextHover.hovered ? root.t.accentColor : root.t.mutedColor
-                    Behavior on color { ColorAnimation { duration: 120 } }
+                    Behavior on color { ColorAnimation { duration: 80 } }
                 }
                 HoverHandler { id: nextHover; cursorShape: Qt.PointingHandCursor }
                 TapHandler  { onTapped: root.nextMonth() }
@@ -158,22 +158,16 @@ Item {
                         width: Math.min(parent.width, parent.height) - 2; height: width
                         radius: width / 2
                         color: isToday    ? Qt.rgba(root.t.accentColor.r, root.t.accentColor.g, root.t.accentColor.b, 0.18)
-                             : isSelected ? Qt.rgba(root.t.accentColor.r,  root.t.accentColor.g,  root.t.accentColor.b,  0.20)
-                             : dayHover.hovered ? root.t.cardBg
+                             : isSelected ? Qt.rgba(root.t.accentColor.r, root.t.accentColor.g, root.t.accentColor.b, 0.20)
+                             : dayHover.hovered ? root.t.hoverOverlay
                              : "transparent"
                         border.width: 1
                         border.color: isToday    ? root.t.accentColor
-                                    : isSelected ? Qt.rgba(root.t.accentColor.r,  root.t.accentColor.g,  root.t.accentColor.b,  0.50)
+                                    : isSelected ? Qt.rgba(root.t.accentColor.r, root.t.accentColor.g, root.t.accentColor.b, 0.50)
                                     : dayHover.hovered ? root.t.cardBorder
                                     : "transparent"
-                        Behavior on color        { ColorAnimation { duration: 120 } }
-                        Behavior on border.color { ColorAnimation { duration: 120 } }
-
-                        Rectangle {
-                            anchors.fill: parent; radius: parent.radius
-                            color: (!isToday && dayHover.hovered) ? root.t.hoverOverlay : "transparent"
-                            Behavior on color { ColorAnimation { duration: 120 } }
-                        }
+                        Behavior on color        { ColorAnimation { duration: 80 } }
+                        Behavior on border.color { ColorAnimation { duration: 80 } }
                     }
 
                     Text {
@@ -223,7 +217,7 @@ Item {
             font.pixelSize: root.t.noteFontSize - 1
             color:          clearMA.containsMouse ? root.t.weekendColor : root.t.mutedColor
             visible:        noteInput.text.length > 0
-            Behavior on color { ColorAnimation { duration: 120 } }
+            Behavior on color { ColorAnimation { duration: 80 } }
 
             MouseArea {
                 id:           clearMA
