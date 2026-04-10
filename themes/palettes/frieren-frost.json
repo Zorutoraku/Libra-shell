@@ -1,0 +1,20 @@
+{
+  "id": "frieren-frost",
+  "name": "Frieren Frost",
+  "preview": ["#4a90c4", "#7ab3d9", "#a06080", "#2d6a9f"],
+
+  "backgroundOne":   "#f5f8fc",
+  "backgroundTwo":   "#edf2f8",
+  "backgroundThree": "#e2eaf4",
+  "backgroundFour":  "#d4e0ef",
+
+  "textMain":  "#0d1a2e",
+  "textSub":   "#1e3148",
+  "textMuted": "#3a5070",
+  "textHint":  "#5a7898",
+
+  "accentPrimary": "#4a90c4",
+  "accentDanger":  "#a06080",
+  "accentInfo":    "#7ab3d9",
+  "accentSuccess": "#2d6a9f"
+}
