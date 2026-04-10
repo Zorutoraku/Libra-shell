@@ -5,8 +5,6 @@ import Quickshell.Io
 
 Singleton {
 
-    // --- Funktion ---
-
     id: root
 
     readonly property string filePath: Quickshell.shellDir + "/calendar_notes.json"
@@ -29,8 +27,6 @@ Singleton {
     function hasNote(year, month, day) {
         return !!root.notes[_key(year, month, day)]
     }
-
-    // --- Intern ---
 
     function _key(y, m, d) { return y + "-" + m + "-" + d }
 
@@ -72,10 +68,8 @@ Singleton {
 
     property var fileView: FileView {
         path: root.filePath
-        Component.onCompleted: {
-            reload()
-            root._load()
-        }
+        onTextChanged: root._load()
+        Component.onCompleted: reload()
     }
 
     property var writeProc: Process {
