@@ -18,6 +18,7 @@
 |---|---|
 | open | generalsettings |
 | open | new wallpapertool design |
+| open | dynamic wallpaper - theme design |
 | idea | musicwidget = vinylplayer |
 | idea | soundsettings with tuner |
 | idea | new panel for hyprland features |
