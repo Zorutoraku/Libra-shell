@@ -11,7 +11,6 @@ Text {
     font.family:    ThemeGlobal.fontSans
     text: Qt.formatTime(new Date(), "hh:mm")
 
-    // Synchronisiert auf die nächste volle Minute, danach exakt jede 60s
     Timer {
         id:       syncTimer
         interval: (60 - new Date().getSeconds()) * 1000

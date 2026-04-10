@@ -9,8 +9,6 @@ Item {
 
     id: root
 
-    // Fix 8: required property var theme entfernt — greift jetzt direkt auf ThemeWidgets zu
-    // wie alle anderen Widgets (konsistentes Muster)
     readonly property var  t:   ThemeWidgets.music
     readonly property bool has: MprisService.hasPlayer
     readonly property bool isSeeking: progressBar.seeking

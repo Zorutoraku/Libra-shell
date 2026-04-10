@@ -16,7 +16,6 @@ Singleton {
     property string wmVal:     "..."
     property string uptimeVal: "..."
 
-    // Performance: 6 Prozesse → 1 kombinierter bash-Aufruf
     Process {
         running: true
         command: ["bash", "-c", [
@@ -45,7 +44,6 @@ Singleton {
         }
     }
 
-    // uptime separat alle 60s aktualisieren (war vorher nie aktualisiert)
     Timer {
         interval: 60000; running: true; repeat: true
         onTriggered: uptimeProc.running = true

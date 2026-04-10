@@ -11,7 +11,6 @@ ShellRoot {
 
     id: root
 
-    // ThemeService früh initialisieren — verhindert lazy-init pro PanelWindow
     Component.onCompleted: ThemeService
 
     QtObject {

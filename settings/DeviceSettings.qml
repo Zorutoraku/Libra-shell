@@ -23,7 +23,6 @@ Item {
     property string diskInfo:  "…"
     property string hostname:  "…"
 
-    // Single process instead of 9 — one shell fork, key=value output
     Process {
         command: ["bash", "-c",
             "printf 'HOSTNAME=%s\\n' \"$(cat /etc/hostname 2>/dev/null)\";" +

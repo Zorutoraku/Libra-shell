@@ -23,7 +23,7 @@ Singleton {
         if (text === "") delete n[k]
         else             n[k] = text
         root.notes = n
-        _scheduleSave()  // Performance: debounced, nicht bei jedem Tastendruck sofort
+        _scheduleSave()
     }
 
     function hasNote(year, month, day) {
@@ -34,7 +34,6 @@ Singleton {
 
     function _key(y, m, d) { return y + "-" + m + "-" + d }
 
-    // Performance: Debounce — speichert frühestens 800ms nach dem letzten Aufruf
     function _scheduleSave() {
         saveDebounce.restart()
     }
@@ -46,7 +45,6 @@ Singleton {
         onTriggered: root._save()
     }
 
-    // Fix: Beim Shutdown/Neustart sofort speichern, Debounce abbrechen
     Component.onDestruction: {
         saveDebounce.stop()
         root._save()

@@ -1,9 +1,7 @@
 {
   "id": "girl-uniform",
   "name": "Uniform",
-
-  "preview": ["#D96CC3", "#7A6CD9", "#C16CD9", "#D96C82"
-  ],
+  "preview": ["#D96CC3", "#7A6CD9", "#C16CD9", "#D96C82"],
 
   "backgroundOne": "#000000",
   "backgroundTwo": "#151515",
