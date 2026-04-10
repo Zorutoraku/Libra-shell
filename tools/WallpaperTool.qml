@@ -65,7 +65,7 @@ PanelWindow {
     }
 
     function setWallpaper(filename) {
-        swwwProc.command = ["swww", "img",
+        swwwProc.command = ["awww", "img", //swww -> awww
             "--transition-type",     "grow",
             "--transition-pos",      "center",
             "--transition-duration", "1.5",
