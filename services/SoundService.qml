@@ -14,6 +14,9 @@ Singleton {
 
     // PwObjectTracker keeps Pipewire node objects alive
     PwObjectTracker { objects: root.sinks }
+        readonly property var sinks: Pipewire.nodes.values.reduce((acc, n) => {
+            if (!n.isStream && n.isSink && n.audio) acc.push(n); return acc
+        }, [])
 
     readonly property PwNode activeSink: {
         if (!Pipewire.ready) return null
