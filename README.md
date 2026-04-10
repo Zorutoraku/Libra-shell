@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚖ LIBRA-SHELL
+# ⚖ LIBRA-SHELL ⚖
 
 [![Last Commit](https://img.shields.io/github/last-commit/Zorutoraku/Libra-shell?style=flat-square&color=c6d0f5&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell/commits/main)
 [![Repo Size](https://img.shields.io/github/repo-size/Zorutoraku/Libra-shell?style=flat-square&color=a6d189&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell)
@@ -12,8 +12,6 @@
 
 </div>
 
----
-
 ## Roadmap
 
 | Status | Feature |
@@ -24,14 +22,9 @@
 | idea | soundsettings with tuner |
 | idea | new panel for hyprland features |
 
-
----
-
 ## Preview
 
 soon
-
----
 
 ## Requirements
 
@@ -40,13 +33,9 @@ soon
 | Hyprland | Wayland compositor |
 | Quickshell | QML shell framework |
 
----
-
 ## Contributing
 
 Ideas, issues and pull requests are welcome.
-
----
 
 <div align="center">
 
