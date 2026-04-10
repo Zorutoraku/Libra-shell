@@ -1,17 +1,60 @@
 <div align="center">
-    <h1>【 LIBRA-SHELL 】</h1>
-    <h3></h3>
+
+# ⚖ LIBRA-SHELL
+
+[![Last Commit](https://img.shields.io/github/last-commit/Zorutoraku/Libra-shell?style=flat-square&color=c6d0f5&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell/commits/main)
+[![Repo Size](https://img.shields.io/github/repo-size/Zorutoraku/Libra-shell?style=flat-square&color=a6d189&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell)
+[![Top Language](https://img.shields.io/github/languages/top/Zorutoraku/Libra-shell?style=flat-square&color=85c1dc&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell)
+[![Stars](https://img.shields.io/github/stars/Zorutoraku/Libra-shell?style=flat-square&color=e5c890&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell/stargazers)
+[![Issues](https://img.shields.io/github/issues/Zorutoraku/Libra-shell?style=flat-square&color=ea999c&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell/issues)
+[![License](https://img.shields.io/github/license/Zorutoraku/Libra-shell?style=flat-square&color=ca9ee6&labelColor=232634)](./LICENSE)
+
+<br/>
+
+*a panel-based, non-distracting quickshell configuration*
+
 </div>
 
-<div align="center"> 
+---
 
-![](https://img.shields.io/github/last-commit/Zorutoraku/Libra-shell?&style=for-the-badge&color=8ad7eb&logo=git&logoColor=D9E0EE&labelColor=1E202B)
-![](https://img.shields.io/github/stars/end-4/Zorutoraku/Libra-shell?style=for-the-badge&logo=andela&color=86dbd7&logoColor=D9E0EE&labelColor=1E202B)
-![](https://img.shields.io/github/repo-size/Zorutoraku/Libra-shell?color=86dbce&label=SIZE&logo=protondrive&style=for-the-badge&logoColor=D9E0EE&labelColor=1E202B)
+## Roadmap
 
-</div>
+| Status | Feature |
+|---|---|
+| open | generalsettings |
+| open | new wallpapertool design |
+| idea | musicwidget = vinylplayer |
+| idea | soundsettings with tuner |
+| idea | new panel for hyprland features |
+
+
+---
+
+## Preview
+
+soon
+
+---
+
+## Requirements
+
+| Package | Description |
+|---|---|
+| Hyprland | Wayland compositor |
+| Quickshell | QML shell framework |
+
+---
+
+## Contributing
+
+Ideas, issues and pull requests are welcome.
+
+---
 
 <div align="center">
-    <h2>• overview •</h2>
-    <h3></h3>
+
+*Built with caffeine and too many hours staring at QML.*
+
+⚖
+
 </div>
