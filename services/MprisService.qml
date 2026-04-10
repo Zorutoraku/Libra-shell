@@ -84,12 +84,14 @@ Singleton {
 
     // 1s poll supplements onPositionChanged
     Timer {
-        repeat:   true
-        onTriggered: {
-            if (root.activePlayer)
-                root._position = root.activePlayer.position
-        }
+    interval: 1000
+    repeat:   true
+    running:  root.isPlaying
+    onTriggered: {
+        if (root.activePlayer)
+            root._position = root.activePlayer.position
     }
+}
 
     Connections {
         target: Mpris.players
