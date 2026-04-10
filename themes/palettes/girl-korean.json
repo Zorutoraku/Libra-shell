@@ -1,0 +1,20 @@
+{
+  "id": "girl-korean",
+  "name": "Seoul",
+  "preview": ["#E8458F", "#4E8FE8", "#E84545", "#3DC48A"],
+
+  "backgroundOne": "#FFFFFF",
+  "backgroundTwo": "#F9F6F8",
+  "backgroundThree": "#F2EEF3",
+  "backgroundFour": "#EDE8F0",
+
+  "textMain": "#1A1520",
+  "textSub": "#3D3347",
+  "textMuted": "#6E6178",
+  "textHint": "#A090AC",
+
+  "accentPrimary": "#E8458F",
+  "accentDanger": "#E84545",
+  "accentInfo": "#4E8FE8",
+  "accentSuccess": "#3DC48A"
+}
