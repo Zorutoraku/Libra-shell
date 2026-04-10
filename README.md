@@ -24,7 +24,11 @@
 
 ## Preview
 
-soon
+<div align="center">
+  <img src="./preview/Preview_Systeminfo.png" alt="Preview" width="800"/>
+  <img src="./preview/Preview_Musicplayer.png" alt="Preview" width="800"/>
+  <img src="./preview/Preview_Calendar.png" alt="Preview" width="800"/>
+</div>
 
 ## Requirements
 
