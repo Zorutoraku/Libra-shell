@@ -16,6 +16,7 @@ Singleton {
     property string wmVal:     "..."
     property string uptimeVal: "..."
 
+    // single bash pass for all static info, only uptime gets a separate refresh timer
     Process {
         running: true
         command: ["bash", "-c", [
@@ -44,6 +45,7 @@ Singleton {
         }
     }
 
+    // uptime is the only value that changes at runtime
     Timer {
         interval: 60000; running: true; repeat: true
         onTriggered: uptimeProc.running = true

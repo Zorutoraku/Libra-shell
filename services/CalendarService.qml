@@ -16,7 +16,7 @@ Singleton {
     }
 
     function setNote(year, month, day, text) {
-        var n = Object.assign({}, root.notes)
+        var n = Object.assign({}, root.notes) // copy triggers onNotesChanged binding update
         var k = _key(year, month, day)
         if (text === "") delete n[k]
         else             n[k] = text
@@ -41,7 +41,7 @@ Singleton {
         onTriggered: root._save()
     }
 
-    Component.onDestruction: {
+    Component.onDestruction: { // flush any pending debounced save on shell exit
         saveDebounce.stop()
         root._save()
     }

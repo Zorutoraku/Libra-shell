@@ -38,6 +38,7 @@ Singleton {
         stdout: SplitParser { onRead: (data) => root._parse(data) }
     }
 
+    // inotifywait watches sysfs so hardware brightness keys update instantly without polling
     Process {
         id: watchProc
         running: true
@@ -49,7 +50,7 @@ Singleton {
             "| while read -r _ _ _; do brightnessctl -m; done"
         ]
         stdout: SplitParser { onRead: (data) => root._parse(data) }
-        onExited: { if (root._hasBacklight) watchRestartTimer.restart() }
+        onExited: { if (root._hasBacklight) watchRestartTimer.restart() } // restart if watcher crashes
     }
 
     Timer {
@@ -58,6 +59,7 @@ Singleton {
         onTriggered: { if (!watchProc.running) watchProc.running = true }
     }
 
+    // 10s safety-net poll in case inotifywait misses an event
     Timer {
         interval: 10000
         running:  true

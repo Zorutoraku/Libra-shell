@@ -69,13 +69,14 @@ Item {
                     Image {
                         id:            faceImg
                         anchors.fill:  parent
-                        source:        root.homePath ? ("file://" + root.homePath + "/.face") : ""
+                        source:        root.homePath ? ("file://" + root.homePath + "/.face") : "" // standard avatar path
                         fillMode:      Image.PreserveAspectCrop
                         smooth:        true
                         visible:       false
                         layer.enabled: true
                     }
 
+                    // MultiEffect+mask = circular crop
                     MultiEffect {
                         anchors.fill:     parent
                         source:           faceImg

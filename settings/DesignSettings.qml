@@ -16,7 +16,7 @@ Item {
 
     MouseArea {
         anchors.fill:            parent
-        z:                       -1
+        z:                       -1 //click-away clears TextInput focus
         propagateComposedEvents: true
         onPressed: (mouse) => { customInput.focus = false; mouse.accepted = false }
     }

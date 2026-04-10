@@ -24,6 +24,7 @@ Item {
     Connections {
         target: MprisService
         function onPositionChanged() {
+            // >2s delta = external seek/skip -> snap instantly, skip smooth animation
             if (Math.abs(root.displayPosition - MprisService.position) > 2) {
                 root._snapping = true;
                 root.displayPosition = MprisService.position;
@@ -193,7 +194,7 @@ Item {
             Item {
                 id: progressBar
                 property bool seeking:   false
-                property bool cooldown:  false
+                property bool cooldown:  false // blocks position snap-back after seek until service confirms
                 property real seekValue: 0
 
                 function seekTo(mx) {

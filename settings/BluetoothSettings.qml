@@ -32,6 +32,7 @@ Item {
     property string connectStatus:     ""
     property string failedAddress:     ""
 
+    // sort: connected > paired > alphabetical
     property var sortedDevices: {
         const devs = BluetoothService.allDevices
         if (!devs || devs.length === 0) return []
@@ -67,6 +68,7 @@ Item {
         }
     }
 
+    // auto-stop scan after 30s
     Timer {
         id: discoveryTimeout
         interval: 30000
@@ -303,6 +305,7 @@ Item {
 
                         width: parent.width - 40; x: 20; height: 56
 
+                        // frontFace/backFace
                         Rectangle {
                             id: frontFace
                             anchors.fill: parent; radius: 10

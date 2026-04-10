@@ -9,6 +9,7 @@ Singleton {
 
     id: root
 
+    // PwObjectTracker keeps Pipewire node objects alive
     PwObjectTracker { objects: root.sinks }
 
     readonly property var sinks: Pipewire.nodes.values.reduce((acc, n) => {
@@ -37,7 +38,7 @@ Singleton {
 
     function setVolume(v) {
         if (sink?.audio) {
-            if (sink.audio.muted) sink.audio.muted = false;
+            if (sink.audio.muted) sink.audio.muted = false; // auto-unmute on volume change
             sink.audio.volume = v;
         }
     }

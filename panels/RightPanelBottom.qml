@@ -67,6 +67,7 @@ PanelWindow {
             readonly property int _contentH: ThemeWidgets.actionButton.height
                                            + (ThemeWidgets.toggleButton.height * 2 + _gridGap)
                                            + ThemeWidgets.slider.height * 2
+            // distribute remaining height evenly as spacing between the 4 content rows
             readonly property int _spacing:  (ThemePanels.rightBottom.height - _margin * 2 - _contentH) / 3
 
             anchors { fill: parent; margins: _margin }

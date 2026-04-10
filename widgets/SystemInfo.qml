@@ -77,6 +77,7 @@ Item {
             width:  logoBase.width
             height: logoBase.height
 
+            // two Text layers overlay each other: base (primary) + sword (danger)
             Text {
                 id:             logoBase
                 text:           root.archLogo

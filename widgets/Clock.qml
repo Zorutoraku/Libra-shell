@@ -11,6 +11,7 @@ Text {
     font.family:    ThemeGlobal.fontSans
     text: Qt.formatTime(new Date(), "hh:mm")
 
+    // syncTimer fires once at the next full minute, then hands off to tickTimer
     Timer {
         id:       syncTimer
         interval: (60 - new Date().getSeconds()) * 1000

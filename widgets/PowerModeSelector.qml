@@ -36,6 +36,7 @@ Rectangle {
             }
         }
         onExited: (code) => {
+            // exit =/ 0 means power-profiles-daemon missing/inactive
             if (code !== 0) {
                 root.available = false
                 console.warn("PowerModeSelector: powerprofilesctl exited with code", code,

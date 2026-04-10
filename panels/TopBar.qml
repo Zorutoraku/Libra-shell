@@ -24,6 +24,7 @@ PanelWindow {
 
     anchors { top: true; left: true; right: true }
 
+    // three regions: center notch + two corner fill-pieces that close the gap at screen edge
     mask: Region {
         regions: [
             Region { x: notch.x;                   y: 0; width: root.notchWidth; height: root.barHeight },

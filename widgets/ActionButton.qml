@@ -25,6 +25,7 @@ Rectangle {
         "warning": ThemeWidgets.actionButton.textColorWarning
     })
 
+    // ?? = fallback to "normal" style when variant is unknown
     readonly property color _bg:     _bgMap[variant]     ?? ThemeWidgets.actionButton.bgColor
     readonly property color _border: _borderMap[variant] ?? ThemeWidgets.actionButton.borderColor
     readonly property color _fg:     _fgMap[variant]     ?? ThemeWidgets.actionButton.textColor

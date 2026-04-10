@@ -122,7 +122,7 @@ Item {
 
                     Text {
                         visible: SoundService.activeSink && SoundService.activeSink.audio
-                        text: SoundService.activeSink?.audio
+                        text: SoundService.activeSink?.audio // ?. guards against null sink
                                 ? Math.round((SoundService.activeSink.audio.volume ?? 0) * 100) + "%"
                                 : ""
                         font.pixelSize: 12; font.family: ThemeGlobal.fontMono

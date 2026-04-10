@@ -17,6 +17,7 @@ Singleton {
     property real _position: 0
     readonly property real position: _position
 
+    // normalize art URL
     readonly property string artUrl: {
         if (!activePlayer) return ""
         const raw = activePlayer.trackArtUrl
@@ -45,6 +46,7 @@ Singleton {
             activePlayer.position = pos
     }
 
+    // prefers a currently-playing player
     function updateActivePlayer() {
         const players = Mpris.players.values
         const playing = players.find(p => p.playbackState === MprisPlaybackState.Playing)
@@ -60,6 +62,7 @@ Singleton {
 
     Component.onCompleted: updateActivePlayer()
 
+    // QtObject wrapper: Singleton can't hold a writable var alias to itself
     QtObject {
         id: instance
         property var activePlayer: null
@@ -79,9 +82,8 @@ Singleton {
         }
     }
 
+    // 1s poll supplements onPositionChanged
     Timer {
-        interval: 1000
-        running:  root.hasPlayer && root.isPlaying
         repeat:   true
         onTriggered: {
             if (root.activePlayer)

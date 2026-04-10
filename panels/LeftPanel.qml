@@ -16,7 +16,7 @@ PanelWindow {
     readonly property int boxWidth:  ThemePanels.leftPanel.width
     readonly property int boxHeight: ThemePanels.leftPanel.height
     readonly property int openX:     ThemePanels.leftPanel.openX
-    readonly property int closedX:   -(boxWidth - peekWidth)
+    readonly property int closedX:   -(boxWidth - peekWidth) // slides left, only peekWidth strip remains visible
 
     implicitWidth:  Screen.width
     implicitHeight: Screen.height
@@ -136,7 +136,7 @@ PanelWindow {
 
                 width: carousel.width; height: carousel.height
                 x:     slotX
-                layer.enabled: snapAnim.running
+                layer.enabled: snapAnim.running // GPU layer only during animation, saves memory at rest
 
                 Loader {
                     id: slotLoader
@@ -177,14 +177,14 @@ PanelWindow {
             }
 
             DragHandler {
-                target:        null
+                target:        null  // manual dragX tracking; don't let QML move the item automatically
                 xAxis.enabled: true
                 yAxis.enabled: false
-                enabled:       !carousel.musicSeeking
+                enabled:       !carousel.musicSeeking // disabled while scrubbing music progress bar
                 onTranslationChanged: { if (!carousel.settling) carousel.dragX = translation.x }
                 onActiveChanged: {
                     if (!active && !carousel.settling) {
-                        if      (carousel.dragX < -50) carousel.snap(+1)
+                    if      (carousel.dragX < -50) carousel.snap(+1) // 50px threshold to commit swipe
                         else if (carousel.dragX >  50) carousel.snap(-1)
                         else { snapAnim.to = 0; snapAnim.start() }
                     }

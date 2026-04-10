@@ -15,12 +15,12 @@ Singleton {
     readonly property bool discovering:  adapter?.discovering ?? false
     readonly property bool discoverable: adapter?.discoverable ?? false
 
-    readonly property var devices: {
+    readonly property var devices: { // connected only
         if (!adapter?.devices) return []
         return adapter.devices.values.filter(d => d?.connected)
     }
 
-    readonly property var allDevices: {
+    readonly property var allDevices: { // connected + paired + discovered
         if (!adapter?.devices) return []
         return adapter.devices.values.filter(d => d !== null && d !== undefined)
     }

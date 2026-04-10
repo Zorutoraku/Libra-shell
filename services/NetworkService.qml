@@ -102,6 +102,7 @@ Singleton {
         }
     }
 
+    // persistent nmcli monitor reacts to connect/disconnect without polling
     Process {
         id: monitorProc
         running: true
@@ -124,6 +125,7 @@ Singleton {
         onTriggered: { if (!monitorProc.running) monitorProc.running = true }
     }
 
+    // 30s safety-net refresh in case nmcli monitor misses an event
     Timer {
         interval: 30000; running: true; repeat: true; triggeredOnStart: true
         onTriggered: { if (!statusProc.running) statusProc.running = true }

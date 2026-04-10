@@ -34,6 +34,7 @@ Item {
         selectedDay = -1
     }
 
+    // JS getDay() is Sun=0; (d+6)%7 shifts to Mon=0
     readonly property int firstWeekday: {
         var d = new Date(viewYear, viewMonth, 1).getDay()
         return (d + 6) % 7
@@ -257,7 +258,7 @@ Item {
                 selectionColor: Qt.rgba(root.t.accentColor.r, root.t.accentColor.g, root.t.accentColor.b, 0.35)
                 clip:           false
 
-                property bool _loading: false
+                property bool _loading: false // guard: skip onTextChanged save while reloading
 
                 Component.onCompleted: _reload()
 

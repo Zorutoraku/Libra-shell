@@ -19,6 +19,7 @@ PanelWindow {
 
     anchors { top: true; bottom: true; left: true; right: true }
 
+    // full-screen transparent click-catcher
     mask: panelState.anyOpen ? fullMask : emptyMask
 
     Region {

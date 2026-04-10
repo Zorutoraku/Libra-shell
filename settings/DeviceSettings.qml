@@ -23,6 +23,7 @@ Item {
     property string diskInfo:  "…"
     property string hostname:  "…"
 
+    // single bash
     Process {
         command: ["bash", "-c",
             "printf 'HOSTNAME=%s\\n' \"$(cat /etc/hostname 2>/dev/null)\";" +

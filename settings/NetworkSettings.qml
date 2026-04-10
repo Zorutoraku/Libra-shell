@@ -20,6 +20,7 @@ Item {
     property string connectStatus: ""
     property bool   scanning:      false
 
+    // nmcli can return duplicate SSIDs, deduplicate by ssid key
     property var filteredNetworks: {
         const nets = NetworkService.networks
         if (!nets || !NetworkService.wifiEnabled) return []
@@ -40,7 +41,7 @@ Item {
             if (code === 0) {
                 selectedSsid  = ""
                 passwordInput = ""
-                rescanProc.running = true
+                rescanProc.running = true // refresh list so connected network shows active
             }
         }
     }

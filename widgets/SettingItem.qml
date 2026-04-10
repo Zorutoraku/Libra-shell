@@ -12,7 +12,7 @@ Rectangle {
     property string icon:     ""
     property string label:    ""
     property string sublabel: ""
-    default property alias content: rightSlot.data
+    default property alias content: rightSlot.data // allows child items to be placed in the right slot declaratively
 
     implicitHeight: ThemeWidgets.settingItem.height
     radius:         ThemeWidgets.settingItem.radius

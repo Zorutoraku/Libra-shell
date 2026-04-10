@@ -43,6 +43,7 @@ Rectangle {
             Layout.fillWidth: true
             from: 0; to: 1
 
+            // only sync from service when not dragging — prevents feedback loop
             Binding on value {
                 value:       VolumeService.volume
                 when:        !slider.pressed && VolumeService.ready

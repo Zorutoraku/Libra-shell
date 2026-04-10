@@ -68,6 +68,7 @@ Item {
     property var  _flushBuf: []
     property int  _flushIdx: 0
 
+    // DND off -> staggered flush (100ms steps) to avoid layout jank
     function _flushQueue() {
         const q = root._queue
         root._queue = []
