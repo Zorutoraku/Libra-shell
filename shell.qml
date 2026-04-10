@@ -45,4 +45,10 @@ ShellRoot {
         description: "Toggle Wallpaper Switcher"
         onPressed:   panelState.wallpaperOpen = !panelState.wallpaperOpen
     }
+
+    GlobalShortcut {
+        name:        "toggleAllPanels"
+        description: "Toggle All Panels"
+        onPressed:   panelState.anyOpen ? panelState.closeAll() : panelState.openAll()
+    }
 }
