@@ -5,9 +5,6 @@
 [![Last Commit](https://img.shields.io/github/last-commit/Zorutoraku/Libra-shell?style=flat-square&color=c6d0f5&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell/commits/main)
 [![Repo Size](https://img.shields.io/github/repo-size/Zorutoraku/Libra-shell?style=flat-square&color=a6d189&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell)
 [![Top Language](https://img.shields.io/github/languages/top/Zorutoraku/Libra-shell?style=flat-square&color=85c1dc&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell)
-[![Stars](https://img.shields.io/github/stars/Zorutoraku/Libra-shell?style=flat-square&color=e5c890&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell/stargazers)
-[![Issues](https://img.shields.io/github/issues/Zorutoraku/Libra-shell?style=flat-square&color=ea999c&labelColor=232634)](https://github.com/Zorutoraku/Libra-shell/issues)
-[![License](https://img.shields.io/github/license/Zorutoraku/Libra-shell?style=flat-square&color=ca9ee6&labelColor=232634)](./LICENSE)
 
 <br/>
 
