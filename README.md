@@ -16,12 +16,13 @@
 
 | Status | Feature |
 |---|---|
-| open | generalsettings |
+| open | generalsettings (monitor, refresh rate, resolution)|
+| open | lockscreen |
 | open | new wallpapertool design |
 | open | dynamic wallpaper - theme design |
-| idea | musicwidget = vinylplayer |
-| idea | soundsettings with tuner |
-| idea | new panel for hyprland features |
+| open | musicwidget = vinylplayer |
+| open | soundsettings with tuner |
+| open | new panel for hyprland features |
 
 ## Preview
 
